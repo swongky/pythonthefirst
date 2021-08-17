@@ -2,7 +2,7 @@ import pandas as pd
 
 wastestats = pd.read_csv("datasets/wastestats.csv")
 wastestats_filter = wastestats[wastestats['waste_type']
-    .isin(['Ferrous Metals','Non-ferrous Metals','Ferrous metal', 'Non-ferrous metal', 'Glass', 'Plastics', 'Plastic'])]
+    .isin(['Ferrous Metals','Non-ferrous metals','Ferrous metal', 'Non-ferrous metal', 'Glass', 'Plastics', 'Plastic'])]
 wastestats_filter = wastestats_filter[wastestats_filter['year'] > 2014].reset_index()
 
 _2018_2019_waste = pd.read_csv("datasets/2018_2019_waste.csv")
